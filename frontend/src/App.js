@@ -143,7 +143,7 @@ const App = () => {
             return (
               <div key={index} className="task-wrapper flex-wrapper">
                 <div onClick={() => setCompleted(todo)} style={{ flex: 7 }}>
-                  {todo.completed == false ? (
+                  {todo.completed === false ? (
                     <span>{todo.title}</span>
                   ): (
                     <s>{todo.title}</s>
